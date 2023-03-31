@@ -3,6 +3,15 @@ repeat
 until
 game:IsLoaded()
 
+Version = "1.0"
+
+getgenv().Notify = function(str)
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Pls Auto | " .. tostring(Version),
+	Text = tostring(str),
+	Duration = 5,
+})
+
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -59,3 +68,5 @@ if Settings.Beg then
         end
     end)
 end
+
+Notify("Script loaded")
