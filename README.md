@@ -30,5 +30,5 @@ getgenv().Settings = {
     WebhookLink = ""
 }
 
-loadstring(game:HttpGet(https://raw.githubusercontent.com/flackrunnerv2/Pls-Auto-Pls-Donate-Selfbot/main/src.lua, true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/flackrunnerv2/Pls-Auto-Pls-Donate-Selfbot/main/src.lua", true))()
 ```
