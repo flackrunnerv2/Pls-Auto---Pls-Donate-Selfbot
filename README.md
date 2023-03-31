@@ -1,5 +1,5 @@
 # Pls Auto | Pls Donate Selfbot
-An automated self-bot for the game [PLS DONATE](roblox.com/games/8737602449).
+An automated self-bot for the game [PLS DONATE](https://www.roblox.com/games/8737602449).
 
 Useful to make robux while being afk.
 If there are bugs please make an issue.
