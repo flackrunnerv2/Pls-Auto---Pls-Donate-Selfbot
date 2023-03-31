@@ -41,20 +41,20 @@ repeat
 until
 Booth ~= nil
 
-local BoothText = string.gsub(ourbooth.Details.Raised.Text:split(" ")[1], ",", "")
+local BoothText = string.gsub(Booth.Details.Raised.Text:split(" ")[1], ",", "")
 
 LocalPlayer.Idled:Connect(function()
-    if AntiAfkDisconnect then
+    if Settings.AntiAfkDisconnect then
         VirtualUser:CaptureController()
         VirtualUser:ClickButton2(Vector2.new())
     end
 end)
 
-if Beg then
+if Settings.Beg then
     spawn(function()
-        while wait(BegInterval) do
-            if tostring(BegText) then
-                SayMessageRequest:FireServer(tostring(BegText), "all")
+        while wait(Settings.BegInterval) do
+            if tostring(Settings.BegText) then
+                SayMessageRequest:FireServer(tostring(Settings.BegText), "all")
             end
         end
     end)
